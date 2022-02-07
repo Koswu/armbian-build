@@ -1,0 +1,36 @@
+diff --git a/include/fdt.h b/include/fdt.h
+index c51212e..8b7077f 100644
+--- a/include/fdt.h
++++ b/include/fdt.h
+@@ -1,5 +1,5 @@
+-#ifndef _FDT_H
+-#define _FDT_H
++#ifndef FDT_H
++#define FDT_H
+ 
+ #ifndef __ASSEMBLY__
+ 
+@@ -59,4 +59,4 @@ struct fdt_property {
+ 
+ /* adding a ramdisk needs 0x44 bytes in version 2008.10 */
+ #define FDT_RAMDISK_OVERHEAD   0x80
+-#endif /* _FDT_H */
++#endif /* FDT_H */
+diff --git a/include/libfdt.h b/include/libfdt.h
+index d23d40e..79d3242 100644
+--- a/include/libfdt.h
++++ b/include/libfdt.h
+@@ -1,5 +1,5 @@
+-#ifndef _LIBFDT_H
+-#define _LIBFDT_H
++#ifndef LIBFDT_H
++#define LIBFDT_H
+ /*
+  * libfdt - Flat Device Tree manipulation
+  * Copyright (C) 2006 David Gibson, IBM Corporation.
+@@ -1129,4 +1129,4 @@ int fdt_del_node(void *fdt, int nodeoffset);
+ 
+ const char *fdt_strerror(int errval);
+ 
+-#endif /* _LIBFDT_H */
++#endif /* LIBFDT_H */
